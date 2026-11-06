@@ -1,19 +1,27 @@
-# License decision pending
+# Release decision — MIT applied; public release HOLD
 
-No license has been selected or granted for this release candidate. This document is decision material, not a license. Before public open-source distribution, confirm the rightsholder(s), authority to license all shipped source/tests/docs/synthetic samples, and the copyright notice, then add the chosen `LICENSE`.
+**As-of: 2026-11-06 JST.** The maintainer selected **MIT** for the standalone Orchard ZIP Inspector v0.1 release candidate, with the copyright notice **Copyright (c) 2026 shin4141**. See [LICENSE](LICENSE).
 
-The reviewed source history identifies one project-owner account as the recorded author. No third-party implementation source or existing license notice was identified in the extracted files. That review does not establish employment, assignment, or other outside rights. Rightsholder confirmation remains outstanding.
+## Scope and rights
 
-| Candidate | Decision-relevant differences |
-|---|---|
-| **MIT — suggested for a minimal permissive release** | Short permission notice; redistribution retains the copyright and permission notices. It contains no express patent-license section. [Official MIT text](https://opensource.org/license/mit) |
-| **Apache-2.0** | Includes an express contributor patent grant and patent-litigation termination condition; redistribution includes license/notice/change-marking duties, including preservation of applicable NOTICE content. It does not grant trademark permission. [Official Apache-2.0 text](https://www.apache.org/licenses/LICENSE-2.0) |
+The MIT license applies to the files distributed in this repository, to the extent the licensing copyright holder owns the rights. It permits use, modification, redistribution and commercial use, provided the notice is retained. It does not have the express patent-license provision found in Apache-2.0. The license choice is not a patent-clearance opinion.
 
-## Dependencies and shipped material
+The prior source-history review identified one project-owner account as recorded author, found no bundled third-party implementation source and no conflicting license notices. However, employment, assignment, possible co-ownership and outside patent rights have **not** been independently verified. The requested public-facing copyright name is a handle, not a guarantee of anonymity or a legal-title determination.
 
-- Runtime: Python standard library, including `zipfile` and `zlib`. No required pip packages.
-- Tests and sample generator also use only the standard library.
-- No Python interpreter, standard-library source, zlib binary/source, third-party package, or external project source is bundled. Users supply their Python runtime; its own licensing remains separate.
-- Samples contain synthetic documentation, data, and inert script text; reports contain synthetic evidence. No actual secrets, user archives, or live-service responses are shipped.
+This license **does not** apply to the separate private Orchard Mac app (B), Linux VM/worker (A), SiriusA, other Decision-OS research or contents of the private source repository.
 
-Remaining decision: confirm the rightsholder/copyright notice and choose one license. Do not label this project MIT/Apache-2.0 until that decision is implemented. See [GitHub's licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) on unlicensed repositories.
+## Why MIT, not Apache-2.0
+
+MIT was selected as a short permissive license for the small, reproducible developer experiment. Apache-2.0 would add explicit contributor patent terms and redistribution duties. The maintainer chose broad adoption of this narrow v0.1 over preserving exclusivity in the released scanner code. Existing permissions for copies released under MIT generally cannot be withdrawn later.
+
+Reference: [MIT](https://opensource.org/license/mit) and [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+## Shipped material and verification
+
+The release candidate includes standard-library-only Python source, tests, synthetic ZIPs, generator, example reports, and documentation; no third-party package, interpreter, source bundle or real user archive is shipped. [REPRODUCIBILITY.json](REPRODUCIBILITY.json) records the verified clean-environment tests; [REVIEW.md](REVIEW.md) records the disclosure/scope review.
+
+The v0.1 tool is experimental, not a sandbox, malware scanner, or guarantee that an archive is safe. A result of NOT_DETECTED or CAP cannot authorize execution or opening of the archive.
+
+## Remaining gate
+
+**The repository remains PRIVATE. Public visibility changes, public releases, tags, announcements, or external posting have NOT been authorized by this licensing decision.** A separate explicit publication GO is required from Shin. Do not add A/B, other inventions, or private material to this release.
