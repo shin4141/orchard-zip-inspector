@@ -2,7 +2,7 @@
 
 Inspect ZIP structure and spot instruction-like text in selected documentation files, without extracting files, executing archive members, or sending archive data anywhere. Get a file inventory, input SHA-256, matched text with line numbers, and explicit reasons when inspection is incomplete.
 
-Python standard library only. This release candidate is validated with synthetic samples; it is not a malware scanner or a sandbox. **License selection is pending:** see [RELEASE_DECISION.md](RELEASE_DECISION.md).
+Python standard library only. This release candidate is validated with synthetic samples; it is not a malware scanner or a sandbox. **License: MIT** ([LICENSE](LICENSE)); copyright (c) 2026 shin4141. Publication remains pending a separate GO.
 
 ## Try the bundled samples
 
@@ -59,4 +59,4 @@ The `gate` field is a report label: `HOLD` for findings or UNKNOWN, `CAP` for a 
 
 Obfuscation, paraphrases, other languages, images/binary content, nested content, general malware, AI-model behavior, and OS isolation are outside the validated scope. Use the synthetic samples to reproduce this candidate; arbitrary real-world archives have not been qualified. Input bytes are read-only, but full filesystem-metadata immutability is not claimed.
 
-See [REVIEW.md](REVIEW.md) for the release review and [REPRODUCIBILITY.json](REPRODUCIBILITY.json) for clean-environment results. Public release and an open-source license grant remain pending.
+See [REVIEW.md](REVIEW.md) for the release review and [REPRODUCIBILITY.json](REPRODUCIBILITY.json) for clean-environment results. The MIT license is applied to this private release candidate. **Public release remains HOLD pending a separate maintainer GO.**
