@@ -1,4 +1,4 @@
-# Release decision — MIT applied; public release HOLD
+# Release decision — MIT applied; v0.1 published
 
 **As-of: 2026-11-06 JST.** The maintainer selected **MIT** for the standalone Orchard ZIP Inspector v0.1 release candidate, with the copyright notice **Copyright (c) 2026 shin4141**. See [LICENSE](LICENSE).
 
@@ -22,6 +22,6 @@ The release candidate includes standard-library-only Python source, tests, synth
 
 The v0.1 tool is experimental, not a sandbox, malware scanner, or guarantee that an archive is safe. A result of NOT_DETECTED or CAP cannot authorize execution or opening of the archive.
 
-## Remaining gate
+## Publication status and remaining scope
 
-**The repository remains PRIVATE. Public visibility changes, public releases, tags, announcements, or external posting have NOT been authorized by this licensing decision.** A separate explicit publication GO is required from Shin. Do not add A/B, other inventions, or private material to this release.
+**Current status (2026-11-06 JST): PUBLIC.** Following the MIT licensing decision, Shin separately approved publishing this standalone repository, and its visibility was changed to public. The prior private/HOLD gate is historical and no longer describes this repository's current visibility. **No social posts or separate promotional announcements were authorized or performed as part of this update.** Do not add A/B, other inventions, or private material to this release. Public availability of v0.1 does not qualify real-world ZIP safety, the Mac app, or VM integration.
