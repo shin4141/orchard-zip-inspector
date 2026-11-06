@@ -2,7 +2,7 @@
 
 Inspect ZIP structure and spot instruction-like text in selected documentation files, without extracting files, executing archive members, or sending archive data anywhere. Get a file inventory, input SHA-256, matched text with line numbers, and explicit reasons when inspection is incomplete.
 
-Python standard library only. This release candidate is validated with synthetic samples; it is not a malware scanner or a sandbox. **License selection is pending:** see [LICENSE_OPTIONS.md](LICENSE_OPTIONS.md).
+Python standard library only. This release candidate is validated with synthetic samples; it is not a malware scanner or a sandbox. **License selection is pending:** see [RELEASE_DECISION.md](RELEASE_DECISION.md).
 
 ## Try the bundled samples
 

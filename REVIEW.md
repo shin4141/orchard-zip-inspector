@@ -16,6 +16,6 @@ The README distinguishes selected text from unscanned content, declared ZIP meta
 
 ## Release decision
 
-No unresolved functional or disclosure blocker was found in the reviewed candidate. Remaining **publication blockers** are rightsholder confirmation and license selection/application. `LICENSE_OPTIONS.md` compares MIT and Apache-2.0; neither has been granted. Public release remains pending a separate maintainer decision.
+No unresolved functional or disclosure blocker was found in the reviewed candidate. Remaining **publication blockers** are rightsholder confirmation and license selection/application. `RELEASE_DECISION.md` compares MIT and Apache-2.0; neither has been granted. Public release remains pending a separate maintainer decision.
 
 Additional detection rules, packaging, CI matrices, support for other platforms, and real-world accuracy benchmarks are follow-up work, not prerequisites for reproducing the bundled samples. They are not claimed as completed.
