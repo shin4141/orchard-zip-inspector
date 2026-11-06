@@ -1,0 +1,67 @@
+{
+  "format": "orchard-c-static-zip/1.0",
+  "limits": {
+    "archive_bytes": 8388608,
+    "central_directory_bytes": 131072,
+    "entries": 128,
+    "member_bytes": 2097152,
+    "total_member_bytes": 8388608,
+    "expansion_ratio": 100,
+    "path_bytes": 512,
+    "text_files": 8,
+    "text_bytes_each": 65536,
+    "text_bytes_total": 262144,
+    "findings": 64,
+    "evidence_chars": 240
+  },
+  "input": {
+    "bytes": 186,
+    "sha256": "5dbfb38f3a8883d277efd2d16644bbb0aa1a35d94880ff419d6fc0dc9ed840d2"
+  },
+  "entries": [
+    {
+      "index": 0,
+      "path": "README.md",
+      "compressed_bytes": 70,
+      "uncompressed_bytes": 74,
+      "expansion_ratio": 1.057,
+      "compression_method": 8,
+      "encrypted": true,
+      "directory": false,
+      "issues": [
+        "ENCRYPTED_ENTRY_UNSUPPORTED",
+        "ZIP_FLAGS_UNSUPPORTED"
+      ],
+      "text_status": "UNINSPECTABLE"
+    }
+  ],
+  "findings": [],
+  "unknown_conditions": [
+    {
+      "code": "ENCRYPTED_ENTRY_UNSUPPORTED",
+      "entry_index": 0
+    },
+    {
+      "code": "ZIP_FLAGS_UNSUPPORTED",
+      "entry_index": 0
+    }
+  ],
+  "coverage": {
+    "listed_entries": 1,
+    "text_files_read": 0,
+    "text_bytes_read": 0,
+    "declared_total_member_bytes": 74
+  },
+  "safety_proven": false,
+  "authorizes_actions": false,
+  "scope": "Metadata and allowlisted UTF-8 text only; CAP permits this static report only.",
+  "limitations": [
+    "NOT_DETECTED is not proof of safety or absence of prompt injection.",
+    "Fixed English/Japanese heuristics can miss obfuscation and other languages and can flag quotations.",
+    "Nonselected content, nested archives and binary payloads are not content-scanned; their CRC is not verified.",
+    "No malware, execution, OS isolation, VM or AI-model resistance claim."
+  ],
+  "inspection_status": "UNKNOWN",
+  "prompt_injection": "UNINSPECTABLE",
+  "gate": "HOLD"
+}

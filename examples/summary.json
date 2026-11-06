@@ -1,0 +1,35 @@
+{
+  "benign": {
+    "inspection_status": "COMPLETE",
+    "prompt_injection": "NOT_DETECTED",
+    "gate": "CAP",
+    "entries": 2,
+    "findings": 0,
+    "unknown_conditions": []
+  },
+  "forged_instructions": {
+    "inspection_status": "COMPLETE",
+    "prompt_injection": "DETECTED",
+    "gate": "HOLD",
+    "entries": 2,
+    "findings": 10,
+    "unknown_conditions": []
+  },
+  "uninspectable_encrypted_flag": {
+    "inspection_status": "UNKNOWN",
+    "prompt_injection": "UNINSPECTABLE",
+    "gate": "HOLD",
+    "entries": 1,
+    "findings": 0,
+    "unknown_conditions": [
+      {
+        "code": "ENCRYPTED_ENTRY_UNSUPPORTED",
+        "entry_index": 0
+      },
+      {
+        "code": "ZIP_FLAGS_UNSUPPORTED",
+        "entry_index": 0
+      }
+    ]
+  }
+}

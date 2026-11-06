@@ -1,0 +1,57 @@
+{
+  "status": "PASS_SYNTHETIC_REPRODUCTION",
+  "version": "0.1",
+  "environment": {
+    "python": "3.14.3",
+    "os": "Darwin",
+    "site_packages": 0,
+    "venv": true,
+    "flags": {
+      "O_NOFOLLOW": true,
+      "O_NONBLOCK": true
+    }
+  },
+  "dependencies_installed": 0,
+  "test_exit_code": 0,
+  "tests": 11,
+  "bundled_sample_cli": {
+    "benign": {
+      "exit_code": 0,
+      "inspection_status": "COMPLETE",
+      "prompt_injection": "NOT_DETECTED",
+      "findings": 0,
+      "categories": 0,
+      "input_sha256": "f3df8decc7073ba300e1d63d3d5e6d1a052f33a54120cc89c1bc0f67020d1dd2",
+      "report_sha256": "63e99c5c1b136c77523efd3e8ad35e36341573531f928a2797f99ca8c36e11df",
+      "matches_committed_example_bytes": true
+    },
+    "forged_instructions": {
+      "exit_code": 0,
+      "inspection_status": "COMPLETE",
+      "prompt_injection": "DETECTED",
+      "findings": 10,
+      "categories": 7,
+      "input_sha256": "547faf6354427261ca3775c99eb9b2d338ced8d497ef9891d385e79cda0678e5",
+      "report_sha256": "3328ce38928e5e3c38fedd0eff383c14970390da875cef992840c6786f6fb685",
+      "matches_committed_example_bytes": true
+    },
+    "uninspectable_encrypted_flag": {
+      "exit_code": 2,
+      "inspection_status": "UNKNOWN",
+      "prompt_injection": "UNINSPECTABLE",
+      "findings": 0,
+      "categories": 0,
+      "input_sha256": "5dbfb38f3a8883d277efd2d16644bbb0aa1a35d94880ff419d6fc0dc9ed840d2",
+      "report_sha256": "5243e260527a47714de0258f8a10585469e70023743825c396c6b81675af763e",
+      "matches_committed_example_bytes": true
+    }
+  },
+  "demo_regeneration": "identical samples and reports on the verified environment",
+  "expected_summary": "DETECTED 10 7",
+  "real_user_archives": 0,
+  "archive_member_execution": 0,
+  "archive_filesystem_extraction": 0,
+  "inspection_network": 0,
+  "safety_guarantee": false,
+  "license_status": "PENDING_RIGHTSHOLDER_CONFIRMATION_AND_LICENSE_SELECTION"
+}

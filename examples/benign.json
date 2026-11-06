@@ -1,0 +1,68 @@
+{
+  "format": "orchard-c-static-zip/1.0",
+  "limits": {
+    "archive_bytes": 8388608,
+    "central_directory_bytes": 131072,
+    "entries": 128,
+    "member_bytes": 2097152,
+    "total_member_bytes": 8388608,
+    "expansion_ratio": 100,
+    "path_bytes": 512,
+    "text_files": 8,
+    "text_bytes_each": 65536,
+    "text_bytes_total": 262144,
+    "findings": 64,
+    "evidence_chars": 240
+  },
+  "input": {
+    "bytes": 317,
+    "sha256": "f3df8decc7073ba300e1d63d3d5e6d1a052f33a54120cc89c1bc0f67020d1dd2"
+  },
+  "entries": [
+    {
+      "index": 0,
+      "path": "README.md",
+      "compressed_bytes": 70,
+      "uncompressed_bytes": 74,
+      "expansion_ratio": 1.057,
+      "compression_method": 8,
+      "encrypted": false,
+      "directory": false,
+      "issues": [],
+      "text_status": "READ_UTF8",
+      "text_sha256": "c42d50b399a6a2d0b469581668df0eaf27c66f9a322c4232e4f69d32be9c99f2"
+    },
+    {
+      "index": 1,
+      "path": "data/example.csv",
+      "compressed_bytes": 23,
+      "uncompressed_bytes": 21,
+      "expansion_ratio": 0.913,
+      "compression_method": 8,
+      "encrypted": false,
+      "directory": false,
+      "issues": [],
+      "text_status": "NOT_SELECTED"
+    }
+  ],
+  "findings": [],
+  "unknown_conditions": [],
+  "coverage": {
+    "listed_entries": 2,
+    "text_files_read": 1,
+    "text_bytes_read": 74,
+    "declared_total_member_bytes": 95
+  },
+  "safety_proven": false,
+  "authorizes_actions": false,
+  "scope": "Metadata and allowlisted UTF-8 text only; CAP permits this static report only.",
+  "limitations": [
+    "NOT_DETECTED is not proof of safety or absence of prompt injection.",
+    "Fixed English/Japanese heuristics can miss obfuscation and other languages and can flag quotations.",
+    "Nonselected content, nested archives and binary payloads are not content-scanned; their CRC is not verified.",
+    "No malware, execution, OS isolation, VM or AI-model resistance claim."
+  ],
+  "inspection_status": "COMPLETE",
+  "prompt_injection": "NOT_DETECTED",
+  "gate": "CAP"
+}
