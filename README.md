@@ -1,6 +1,6 @@
 # Orchard ZIP Inspector v0.1
 
-Inspect ZIP structure and spot instruction-like text in selected documentation files, without extracting files, executing archive members, or sending archive data anywhere. Get a file inventory, input SHA-256, matched text with line numbers, and explicit reasons when inspection is incomplete.
+**Experimental first-pass aid, not a safety verdict.** This standalone offline tool checks bounded ZIP structure and looks for instruction-like text in selected documentation files using fixed English/Japanese heuristics. Paraphrases, obfuscation, and other languages can evade these rules. It never extracts files to disk, executes archive members, or sends archive data anywhere. Reports include a file inventory, input SHA-256, matched text with line numbers, and explicit reasons when inspection is incomplete.
 
 Python standard library only. This release candidate is validated with synthetic samples; it is not a malware scanner or a sandbox. **License: MIT** ([LICENSE](LICENSE)); copyright (c) 2026 shin4141. This repository is publicly available as an experimental v0.1 release.
 
@@ -59,4 +59,4 @@ The `gate` field is a report label: `HOLD` for findings or UNKNOWN, `CAP` for a 
 
 Obfuscation, paraphrases, other languages, images/binary content, nested content, general malware, AI-model behavior, and OS isolation are outside the validated scope. Use the synthetic samples to reproduce this candidate; arbitrary real-world archives have not been qualified. Input bytes are read-only, but full filesystem-metadata immutability is not claimed.
 
-See [REVIEW.md](REVIEW.md) for the release review and [REPRODUCIBILITY.json](REPRODUCIBILITY.json) for clean-environment results. The MIT license applies to this public experimental v0.1 repository. The standalone ZIP inspector is published; the separate Mac application (B), VM worker (A), and broader Orchard product are not included in this release.
+See [REVIEW.md](REVIEW.md) for the release review and [REPRODUCIBILITY.json](REPRODUCIBILITY.json) for clean-environment results. The MIT license applies to this public experimental v0.1 repository. **Only the standalone ZIP inspection component is published here; the broader Orchard application and isolation infrastructure are not included.**
